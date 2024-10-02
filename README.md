@@ -1,4 +1,5 @@
 # GeoMapper
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/serg-mir/geomapper/ci.yml?branch=main&style=for-the-badge)
 
 GeoMapper is a Python-based tool for creating interactive geospatial maps using Folium, served through a FastAPI web interface. The project is Dockerized for easy deployment and scalability.
 
