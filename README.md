@@ -1,7 +1,8 @@
 # GeoMapper
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/serg-mir/geomapper/ci.yml?branch=main&style=for-the-badge)
 
-GeoMapper is a Python-based tool for creating interactive geospatial maps using Folium, served through a FastAPI web interface. The project is Dockerized for easy deployment and scalability.
+GeoMapper is a small Python-based tool for creating interactive geospatial maps using Folium, served through a FastAPI web interface. The project is Dockerized for easy deployment and scalability. 
+Initially created during my experiments with Folium, GeoMapper has since been enhanced to offer a more robust and user-friendly experience for generating geospatial maps.
 
 Example screenshot:
 ![image](images/get_map_image.jpeg)
@@ -30,7 +31,6 @@ Example screenshot:
     ```
 
 3. **Access the app** at:
-   - Root: [http://localhost:8000/](http://localhost:8000/)
    - Generate Map: [http://localhost:8000/generate_map_code?lat=47.9105&lon=33.3918](http://localhost:8000/generate_map_code?lat=47.9105&lon=33.3918)
    - Download Map: [http://localhost:8000/download_map?lat=47.9105&lon=33.3918](http://localhost:8000/download_map?lat=47.9105&lon=33.3918)
    - Get map image: [http://localhost:8000/get_map_image?lat=47.9105&lon=33.3918](http://localhost:8000/get_map_image?lat=47.9105&lon=33.3918)
@@ -48,7 +48,6 @@ Example screenshot:
     ```
 
 3. **Access the app** locally at:
-   - Root: `http://127.0.0.1:8000`
    - Generate Map: `http://127.0.0.1:8000/generate_map_code?lat=47.9105&lon=33.3918`
    - Download Map: `http://127.0.0.1:8000/download_map?lat=47.9105&lon=33.3918`
    - Get map image:`http://127.0.0.1:8000/get_map_image?lat=47.9105&lon=33.3918]`
