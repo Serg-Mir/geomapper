@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        sudo apt-get install -y wkhtmltopdf
+        python -m pip install --upgrade pip
+        pip install -r requirements/requirements-dev.txt
+    - name: Run tests
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: |
+        pytest tests
+    - name: Check formatting
+      run: |
+        pip install black
+        black --line-length 100 --check .

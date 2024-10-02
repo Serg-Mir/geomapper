@@ -1,0 +1,5 @@
+fastapi==0.95.2
+uvicorn==0.21.1
+folium~=0.12.1
+setuptools~=65.5.0
+imgkit==1.2.3
