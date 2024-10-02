@@ -64,3 +64,12 @@ Example screenshot:
 ## Contributing
 
 Contributions are welcome! Please fork the repository and open a pull request.
+
+Before starting to contribute to earthquake-app, please install `pre-commit` to ensure your changes are checked for style and standards before committing them to the repository:
+
+    $ pre-commit install
+
+[pre-commit](https://pre-commit.com) is installed automatically in development environment by pip.
+If you are running the Docker setup, please install it with `pip` in your host machine:
+
+    $ pip install pre-commit
