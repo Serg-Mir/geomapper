@@ -4,6 +4,9 @@ FROM python:3.11-slim
 # Set the working directory
 WORKDIR /app
 
+# Create the generated_maps directory with correct permissions
+RUN mkdir -p /app/generated_maps && chmod -R 755 /app/generated_maps
+
 # Copy the requirements file and install dependencies
 COPY requirements/*.txt ./requirements/
 

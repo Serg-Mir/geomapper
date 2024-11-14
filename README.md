@@ -27,7 +27,7 @@ Example screenshot:
 2. **Build and run with Docker**:
     ```bash
     docker build -t geomapper .
-    docker run -d -p 8000:8000 geomapper
+    docker run -p 8000:8000 geomapper
     ```
 
 3. **Access the app** at:
